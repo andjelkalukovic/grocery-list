@@ -1,0 +1,54 @@
+.list-section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+article {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-right: 20rem;
+}
+
+.edit-btn,
+.remove-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.edit-btn {
+    color: var(--primary-color);
+}
+
+.remove-btn {
+    color: var(--red-color);
+}
+
+.edit-btn:hover {
+    color: #4c7b5f;
+    transition: all, 200ms ease-in-out;
+}
+
+.remove-btn:hover {
+    color: #af454a;
+    transition: all, 200ms ease-in-out; 
+}
+
+@media(min-width: 501px) and (max-width: 768px){
+    .title {
+        margin-right: 10rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .title {
+      margin-right: 7rem;
+    }
+  }

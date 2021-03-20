@@ -1,0 +1,19 @@
+.alert {
+    margin: 1rem auto;
+    font-size: 1rem;
+    width: 45%;
+    padding: 0.2rem 1.2rem;
+    box-shadow: 5px 5px 2.5px rgb(221, 221, 221);
+}
+
+.alert-danger {
+    color: var(--red-color);
+    background: #ffe0e3;
+    border: 1px solid var(--red-color);
+  }
+
+.alert-success {
+    color: var(--primary-color);
+    background: #d4edda;
+    border: 1px solid var(--primary-color);
+  }

@@ -5,9 +5,94 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --primary-color:#3d654d;
+  --red-color: #9c3439;
+}
+
+#root {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#root::before {
+  content: '';
+  background: url('../src/img/desktop-background.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+section {
+  z-index: 2;
+}
+
+section h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  color: var(--primary-color);
+}
+
+form input {
+  margin: 0.4rem 0.4rem;
+  padding: 0.3rem 0.4rem;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.2rem;
+  width: 40%;
+}
+
+.submit-btn {
+  margin: 0.4rem 0.4rem;
+  padding: 0.3rem 1.2rem;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.2rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+  color: rgb(253, 239, 213);
+  transition: all, 200ms ease-in-out;
+}
+
+.clear-btn {
+  padding: 0.3rem 1.2rem;
+  background: transparent;
+  border: 2px solid var(--red-color);
+  border-radius: 0.2rem;
+  color: var(--red-color);
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 1.5rem auto;
+}
+
+.clear-btn:hover {
+  background-color: var(--red-color);
+  color: rgb(253, 239, 213);
+  transition: all, 200ms ease-in-out;
+}
+
+@media(max-width: 500px) {
+  form input {
+    width: auto;
+  }
 }
